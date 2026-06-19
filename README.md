@@ -1,5 +1,10 @@
-# Matsu GoGoGo V4.2 Light Ocean
+# Matsu GoGoGo V4.3 Live Weather
 
-更新：淡藍清新海洋風、導航按鈕保留、首頁加入南竿與北竿即時天氣。
+更新：
+- 移除「🔎 地圖」按鈕
+- 保留「📍 導航」與「📸 打卡」
+- 南竿、北竿天氣開啟即時更新
+- 每 10 分鐘自動更新一次天氣
+- 可手動按「立即更新天氣」
 
-上傳 `index.html` 到 GitHub Pages repository 根目錄即可。
+GitHub Pages 單檔版，上傳 index.html 即可。
