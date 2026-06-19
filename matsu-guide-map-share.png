@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 850">
+<defs><style>
+.t{font:800 42px sans-serif;fill:#23677e}.s{font:600 19px sans-serif;fill:#5e7f8b}.l{font:700 17px sans-serif;fill:#24424d}.sm{font:600 14px sans-serif;fill:#6f8892}.n{font:800 14px sans-serif;fill:white}
+.d1{stroke:#36a9d6;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.d2{stroke:#53b88a;stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.ferry{stroke:#3ba8c8;stroke-width:5;stroke-dasharray:12 12;fill:none}
+</style><linearGradient id="sea" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#e9fbff"/><stop offset="1" stop-color="#c8f3ff"/></linearGradient><linearGradient id="land" x1="0" x2="1"><stop stop-color="#fff7dd"/><stop offset="1" stop-color="#e7f8da"/></linearGradient></defs>
+<rect width="1400" height="850" fill="url(#sea)"/><circle cx="1240" cy="92" r="48" fill="#fff2a6" opacity=".9"/>
+<text x="60" y="70" class="t">🌊 Matsu GoGo｜馬祖 3天2夜導覽圖</text><text x="64" y="105" class="s">輕鬆旅遊版：大概知道方向、景點順序、南竿 ⇄ 北竿搭船動線</text>
+<path d="M120 255 C135 175 225 150 320 170 C390 125 475 155 505 220 C590 235 635 295 610 370 C665 430 610 525 505 525 C440 595 325 585 285 525 C195 535 120 485 135 410 C85 370 80 300 120 255Z" fill="url(#land)" stroke="#a6d7ba" stroke-width="4"/>
+<path d="M880 205 C910 135 1010 120 1075 165 C1150 145 1240 190 1250 270 C1320 330 1280 430 1195 440 C1145 510 1035 495 1000 445 C920 455 850 400 865 330 C825 285 835 235 880 205Z" fill="url(#land)" stroke="#a6d7ba" stroke-width="4"/>
+<text x="250" y="230" class="t" style="font-size:34px">南竿</text><text x="1030" y="218" class="t" style="font-size:34px">北竿</text>
+<path d="M560 318 C680 255 770 260 895 300" class="ferry"/><text x="675" y="248" class="s">⛴ 福澳港 ⇄ 白沙港</text>
+<path d="M520 310 L430 255 L330 300 L245 355 L205 445 L320 500 L430 470 L500 405 L560 350 L530 470 L400 555 L260 565" class="d1"/>
+<path d="M430 255 L470 205 L530 255 L520 310" class="d2"/><path d="M915 310 L1000 245 L1110 285 L1185 345 L1120 410 L1030 455 L950 410 L900 465" class="d2"/>
+<g transform="translate(520,310)"><circle r="16" fill="#4aaed0"/><text text-anchor="middle" y="5" class="n">1</text><text x="22" y="6" class="l">福澳港</text></g>
+<g transform="translate(430,255)"><circle r="16" fill="#7bb7ff"/><text text-anchor="middle" y="5" class="n">2</text><text x="-110" y="-18" class="l">民宿</text></g>
+<g transform="translate(330,300)"><circle r="16" fill="#ffb067"/><text text-anchor="middle" y="5" class="n">3</text><text x="-82" y="6" class="l">早餐</text></g>
+<g transform="translate(245,355)"><circle r="16" fill="#36a9d6"/><text text-anchor="middle" y="5" class="n">4</text><text x="-110" y="6" class="l">北海坑道</text></g>
+<g transform="translate(205,445)"><circle r="16" fill="#36a9d6"/><text text-anchor="middle" y="5" class="n">5</text><text x="-75" y="6" class="l">鐵堡</text></g>
+<g transform="translate(320,500)"><circle r="16" fill="#36a9d6"/><text text-anchor="middle" y="5" class="n">6</text><text x="-90" y="35" class="l">津沙聚落</text></g>
+<g transform="translate(430,470)"><circle r="16" fill="#ffb067"/><text text-anchor="middle" y="5" class="n">7</text><text x="24" y="6" class="l">夫人咖啡</text></g>
+<g transform="translate(500,405)"><circle r="16" fill="#36a9d6"/><text text-anchor="middle" y="5" class="n">8</text><text x="25" y="6" class="l">民俗文化館</text></g>
+<g transform="translate(560,350)"><circle r="16" fill="#36a9d6"/><text text-anchor="middle" y="5" class="n">9</text><text x="24" y="6" class="l">士兵特約茶室</text></g>
+<g transform="translate(530,470)"><circle r="16" fill="#ffb067"/><text text-anchor="middle" y="5" class="n">10</text><text x="25" y="6" class="l">布拉格 Pizza</text></g>
+<g transform="translate(400,555)"><circle r="16" fill="#ff8fa3"/><text text-anchor="middle" y="5" class="n">11</text><text x="24" y="6" class="l">暖糖酒吧</text></g>
+<g transform="translate(260,565)"><circle r="16" fill="#7b7ee8"/><text text-anchor="middle" y="5" class="n">12</text><text x="-120" y="5" class="l">藍眼淚</text></g>
+<g transform="translate(470,205)"><circle r="16" fill="#ffb067"/><text text-anchor="middle" y="5" class="n">D2</text><text x="24" y="-4" class="l">虫弟餅</text></g>
+<g transform="translate(530,255)"><circle r="16" fill="#53b88a"/><text text-anchor="middle" y="5" class="n">D2</text><text x="25" y="-6" class="l">八八坑道 / 馬祖酒廠</text></g>
+<g transform="translate(915,310)"><circle r="16" fill="#4aaed0"/><text text-anchor="middle" y="5" class="n">6</text><text x="-85" y="6" class="l">白沙港</text></g>
+<g transform="translate(1000,245)"><circle r="16" fill="#53b88a"/><text text-anchor="middle" y="5" class="n">7</text><text x="-90" y="-20" class="l">芹壁聚落</text></g>
+<g transform="translate(1110,285)"><circle r="16" fill="#ffb067"/><text text-anchor="middle" y="5" class="n">8</text><text x="25" y="5" class="l">芹沃咖啡</text></g>
+<g transform="translate(1185,345)"><circle r="16" fill="#53b88a"/><text text-anchor="middle" y="5" class="n">9</text><text x="22" y="6" class="l">橋仔聚落</text></g>
+<g transform="translate(1120,410)"><circle r="16" fill="#53b88a"/><text text-anchor="middle" y="5" class="n">10</text><text x="25" y="6" class="l">壁山觀景台</text></g>
+<g transform="translate(1030,455)"><circle r="16" fill="#ffb067"/><text text-anchor="middle" y="5" class="n">11</text><text x="-95" y="35" class="l">鏡沃小吃</text></g>
+<g transform="translate(950,410)"><circle r="16" fill="#ff8fa3"/><text text-anchor="middle" y="5" class="n">12</text><text x="-120" y="5" class="l">2845 酒文化</text></g>
+<g transform="translate(900,465)"><circle r="16" fill="#ffb067"/><text text-anchor="middle" y="5" class="n">13</text><text x="-90" y="35" class="l">坂里地瓜餃</text></g>
+<g transform="translate(570,560)"><circle r="16" fill="#ffb067"/><text text-anchor="middle" y="5" class="n">14</text><text x="25" y="6" class="l">儷儐餐廳</text></g>
+<path d="M430 255 C515 150 590 155 650 190" stroke="#8fa5b3" stroke-width="4" stroke-dasharray="8 8" fill="none"/><text x="600" y="175" class="l">Day3 回程：民宿 → 機場 / 福澳港</text>
+<rect x="1000" y="610" width="340" height="175" rx="24" fill="white" opacity=".92" stroke="#b9ecfb"/><text x="1022" y="648" class="l">圖例</text><circle cx="1038" cy="678" r="12" fill="#36a9d6"/><text x="1060" y="684" class="sm">Day1 南竿路線</text><circle cx="1038" cy="710" r="12" fill="#53b88a"/><text x="1060" y="716" class="sm">Day2 南竿＋北竿</text><circle cx="1038" cy="742" r="12" fill="#ffb067"/><text x="1060" y="748" class="sm">美食 / 咖啡 / 點心</text><circle cx="1210" cy="678" r="12" fill="#ff8fa3"/><text x="1232" y="684" class="sm">小酌</text><circle cx="1210" cy="710" r="12" fill="#4aaed0"/><text x="1232" y="716" class="sm">港口 / 搭船</text><circle cx="1210" cy="742" r="12" fill="#7bb7ff"/><text x="1232" y="748" class="sm">住宿</text>
+<text x="62" y="810" class="sm">※ 此為輕鬆旅遊導覽圖，位置採相對方位與行程順序呈現，實際路線請以網站內 Google Maps 導航為準。</text></svg>
