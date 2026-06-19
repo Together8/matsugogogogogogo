@@ -1,7 +1,9 @@
-# Matsu GoGoGo V4 Ocean
+# Matsu GoGoGo V4.1 Fresh Blue
 
-海洋風 GitHub Pages 單檔版。
+清新淺藍版。單檔 index.html，GitHub Pages 可直接使用。
 
-上傳 `index.html` 到 GitHub Pages repository 根目錄即可。
-
-功能：路線圖、Google Maps 導航、固定四人分帳、打卡清單。
+更新：
+- 改成清新淺藍色
+- 清單卡片移除地圖/導航按鈕
+- 路線圖保留導航
+- 首頁加入南竿即時天氣（Open-Meteo 免 API Key）
