@@ -1,10 +1,8 @@
-# Matsu GoGoGo V4.3 Live Weather
+# Matsu GoGo v5.0｜旅遊導覽圖版
 
-更新：
-- 移除「🔎 地圖」按鈕
-- 保留「📍 導航」與「📸 打卡」
-- 南竿、北竿天氣開啟即時更新
-- 每 10 分鐘自動更新一次天氣
-- 可手動按「立即更新天氣」
+已在首頁新增馬祖旅遊導覽圖。
 
-GitHub Pages 單檔版，上傳 index.html 即可。
+- images/matsu-guide-map.svg：網站版導覽圖
+- images/matsu-guide-map-share.png：分享版 PNG
+
+上傳整個資料夾到 GitHub Pages Repository 根目錄即可。

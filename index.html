@@ -51,6 +51,9 @@ input,select{width:100%;padding:12px;border:1px solid #c7efff;border-radius:14px
 .check-item{display:flex;align-items:center;gap:10px;background:white;padding:13px;border-radius:16px;margin-bottom:8px;box-shadow:0 4px 12px rgba(54,169,214,.08)}.check-item input{width:auto;transform:scale(1.25)}.progress{height:14px;background:#dff6ff;border-radius:999px;overflow:hidden}.progress span{display:block;height:100%;background:linear-gradient(90deg,#8edcf4,#36a9d6);width:0}
 .footer-nav{position:fixed;bottom:0;left:0;right:0;background:rgba(251,254,255,.96);box-shadow:0 -2px 20px rgba(54,169,214,.12);display:none;z-index:100}.footer-nav button{flex:1;text-align:center;border:0;background:transparent;padding:10px 4px;font-size:12px;font-weight:900;color:var(--blue3)}.small{font-size:13px;color:var(--muted)}hr{border:0;border-top:1px solid #e7f7fc;margin:16px 0}
 @media(max-width:720px){.nav button{display:none}.brand{margin:auto}.hero{min-height:310px}.time-card{grid-template-columns:1fr}.footer-nav{display:flex}.expense-row{grid-template-columns:1fr}.container{padding-bottom:100px}.route-stop{grid-template-columns:42px 1fr}.badge{width:42px;height:42px}.route-stop:not(:last-child):after{left:20px;top:42px}}
+
+/* ===== Matsu GoGo V5 Guide Map ===== */
+.guide-map-section{margin:24px 0 28px}.guide-map-card{background:rgba(255,255,255,.97);border:1px solid rgba(142,220,244,.28);border-radius:28px;padding:18px;box-shadow:var(--shadow)}.guide-map-img{width:100%;display:block;border-radius:22px;box-shadow:0 12px 32px rgba(54,169,214,.16);background:#eefaff}.guide-map-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.guide-map-actions a{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:10px 14px;font-weight:900;background:#eefaff;color:var(--deep)}.guide-map-actions a.primary{background:var(--blue3);color:white}
 </style></head><body>
 <div class="topbar"><div class="nav"><div class="brand">🌊 Matsu GoGo v1.0</div>
 <button onclick="showPage('home')" class="active">首頁</button><button onclick="showPage('route')">路線圖</button><button onclick="showPage('day1')">Day1</button><button onclick="showPage('day2')">Day2</button><button onclick="showPage('day3')">Day3</button><button onclick="showPage('food')">美食/小酌</button><button onclick="showPage('places')">景點</button><button onclick="showPage('transport')">交通</button><button onclick="showPage('budget')">記帳</button><button onclick="showPage('checklist')">打卡</button></div></div>
@@ -59,6 +62,21 @@ input,select{width:100%;padding:12px;border:1px solid #c7efff;border-radius:14px
 <main class="container">
 <section id="home" class="page active"><div class="grid"><div class="card"><h2>行程總覽</h2><p>基隆 → Day1 南竿 → Day2 北竿 → day3 回家。</p></div><div class="card weather-card"><h2>南竿即時天氣</h2><div id="weatherN"><p>讀取中...</p></div></div><div class="card weather-card"><h2>北竿即時天氣</h2><div id="weatherB"><p>讀取中...</p></div></div></div>
 <div class="weather-refresh"><button class="btn primary" onclick="loadWeather(true)">🔄 立即更新天氣</button><span class="small" id="weatherStatus">天氣會每 10 分鐘自動更新。</span></div>
+<section class="guide-map-section">
+  <h2 class="section-title">🗺️ 馬祖旅遊導覽圖</h2>
+  <div class="guide-map-card">
+    <p>依照目前網站行程整理，採「輕鬆旅遊導覽」風格，方便快速看懂南竿、北竿方向與每日移動順序。</p>
+    <a href="images/matsu-guide-map.svg" target="_blank" title="點擊放大馬祖旅遊導覽圖">
+      <img src="images/matsu-guide-map.svg" alt="馬祖三天兩夜旅遊導覽圖" class="guide-map-img">
+    </a>
+    <div class="guide-map-actions">
+      <a class="primary" href="images/matsu-guide-map.svg" target="_blank">🔍 放大查看</a>
+      <a href="images/matsu-guide-map-share.png" target="_blank">📤 下載分享版 PNG</a>
+    </div>
+    <p class="small">※ 圖中位置為行程導覽用的相對方位，不是精密道路地圖；實際移動請以網站內 Google Maps 導航為準。</p>
+  </div>
+</section>
+
 <div class="big-buttons"><div class="bigbtn" onclick="showPage('route')">路線圖</div><div class="bigbtn" onclick="showPage('day1')">Day1</div><div class="bigbtn" onclick="showPage('day2')">Day2</div><div class="bigbtn" onclick="showPage('budget')">記帳頁面</div><div class="bigbtn" onclick="showPage('transport')">船班/交通</div><div class="bigbtn" onclick="showPage('checklist')">打卡</div></div><p class="small">好好休假：好好上班</p><h2 class="section-title">今日重點</h2><div id="homeToday"></div></section>
 <section id="route" class="page"><h2 class="section-title">A點 → B點 → C點 路線導覽</h2><div class="notice">路線圖：「📍 導航」、「📸 打卡」。</div><div class="grid"><button class="bigbtn" onclick="renderRoute('day1')">Day1 路線</button><button class="bigbtn" onclick="renderRoute('day2')">Day2 路線</button><button class="bigbtn" onclick="renderRoute('day3')">Day3 路線</button></div><div id="routeMap"></div></section>
 <section id="day1" class="page"><h2 class="section-title">Day1｜6/23 南竿＋小酌＋藍眼淚</h2><div class="notice">小酌請勿酒駕；藍眼淚需視天氣、潮汐與現場狀況。</div><div id="day1List"></div></section>
