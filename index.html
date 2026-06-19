@@ -1,5 +1,41 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Matsu GoGoGo V4.3 Live Weather</title><meta name="theme-color" content="#8edcf4"><style>
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>🌊 Matsu GoGo v1.0｜馬祖旅遊助手</title>
+
+<meta name="description"
+content="🌊 馬祖三天兩夜旅遊助手｜完整三天兩夜行程、導航路線、南竿/北竿即時天氣、船班資訊、美食推薦、小酌、景點介紹、旅遊記帳、四人分帳、旅遊打卡，一個網站全部搞定。">
+
+<meta name="keywords"
+content="馬祖,南竿,北竿,馬祖旅遊,自由行,旅遊,導航,Google Maps,天氣,船班,藍眼淚,八八坑道,芹壁聚落,美食,記帳,分帳">
+
+<meta name="author"
+content="Jason Tsai">
+
+<meta property="og:title"
+content="🌊 Matsu GoGo v1.0｜馬祖旅遊助手">
+
+<meta property="og:description"
+content="完整三天兩夜馬祖旅遊助手，整合導航、即時天氣、船班查詢、美食推薦、景點介紹、四人分帳與旅遊打卡。">
+
+<meta property="og:type"
+content="website">
+
+<meta property="og:url"
+content="https://together8.github.io/matsugogogogogogo/">
+
+<meta property="og:locale"
+content="zh_TW">
+
+<meta name="theme-color"
+content="#8edcf4">
+
+<style>
 :root{--bg:#f3fbff;--card:#ffffff;--wash:#eaf9ff;--wash2:#d8f4ff;--blue:#8edcf4;--blue2:#5fc4e8;--blue3:#36a9d6;--deep:#2b7188;--ink:#254450;--muted:#6f8892;--line:#b9ecfb;--sand:#fff9ea;--shadow:0 12px 28px rgba(54,169,214,.12)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Microsoft JhengHei","Noto Sans TC",Arial,sans-serif;background:linear-gradient(180deg,#eefaff 0%,#fbfeff 50%,#fffaf0 100%);color:var(--ink);line-height:1.7}button,a,input,select{font-family:inherit}a{text-decoration:none;color:inherit}
 .topbar{position:sticky;top:0;z-index:99;background:rgba(251,254,255,.94);backdrop-filter:blur(10px);box-shadow:0 2px 18px rgba(54,169,214,.10)}.nav{max-width:1160px;margin:auto;display:flex;gap:8px;align-items:center;overflow-x:auto;padding:10px 14px}.brand{font-weight:900;color:var(--blue3);white-space:nowrap;margin-right:auto}.nav button{border:0;border-radius:999px;background:#eefaff;padding:9px 13px;font-weight:900;white-space:nowrap;cursor:pointer;color:var(--deep)}.nav button.active{background:var(--blue3);color:white}
@@ -17,22 +53,6 @@ input,select{width:100%;padding:12px;border:1px solid #c7efff;border-radius:14px
 @media(max-width:720px){.nav button{display:none}.brand{margin:auto}.hero{min-height:310px}.time-card{grid-template-columns:1fr}.footer-nav{display:flex}.expense-row{grid-template-columns:1fr}.container{padding-bottom:100px}.route-stop{grid-template-columns:42px 1fr}.badge{width:42px;height:42px}.route-stop:not(:last-child):after{left:20px;top:42px}}
 </style></head><body>
 <div class="topbar"><div class="nav"><div class="brand">🌊 Matsu GoGo v1.0</div>
-
-<meta property="og:title"
-content="🌊 Matsu GoGo v1.0">
-
-<meta property="og:description"
-content="🌊 Matsu GoGo v1.0。">
-
-<meta property="og:type"
-content="website">
-
-<meta property="og:url"
-content="https://together8.github.io/matsugogogogogogo/">
-
-<meta property="og:image"
-content="https://together8.github.io/matsugogogogogogo/image/share.jpg">
-  
 <button onclick="showPage('home')" class="active">首頁</button><button onclick="showPage('route')">路線圖</button><button onclick="showPage('day1')">Day1</button><button onclick="showPage('day2')">Day2</button><button onclick="showPage('day3')">Day3</button><button onclick="showPage('food')">美食/小酌</button><button onclick="showPage('places')">景點</button><button onclick="showPage('transport')">交通</button><button onclick="showPage('budget')">記帳</button><button onclick="showPage('checklist')">打卡</button></div></div>
 <div class="footer-nav"><button onclick="showPage('home')">首頁</button><button onclick="showPage('route')">路線</button><button onclick="showPage('day1')">Day1</button><button onclick="showPage('day2')">Day2</button><button onclick="showPage('budget')">分帳</button><button onclick="showPage('checklist')">打卡</button></div>
 <header class="hero"><div class="hero-inner"><span class="pill">今日想台達｜明日就阿達</span><h1>馬祖南竿・北竿 3天2夜</h1><p>Map導航、行程導覽、天氣更新、分帳系統、打卡清單。</p></div></header>
